@@ -14,7 +14,7 @@ export const addVehicle = vehicle => async (dispatch, getState) => {
   await AsyncStorage.setItem('VEHICLES', JSON.stringify([...data, vehicle]));
   dispatch({
     type: ADDED_VEHICLES,
-    payload: data,
+    payload: vehicle,
   });
 };
 
