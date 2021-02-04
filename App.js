@@ -143,7 +143,6 @@ export default function App({navigation}) {
     [],
   );
 
-
   return (
     <AuthContext.Provider value={authContext}>
       <AppStack.Navigator
